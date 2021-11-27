@@ -1,0 +1,105 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Add styles here! */
+
+h1,
+h2 {
+  margin: 0;
+}
+
+.max-width-wrapper {
+  max-width: 540px;
+  margin: 0 auto;
+}
+
+header {
+  margin-top: 96px;
+  margin-bottom: 64px;
+}
+
+.title {
+  margin-bottom: 64px;
+}
+
+main {
+  background-color: hsl(0deg, 0%, 60%);
+  padding: 64px 0;
+  border-top: 8px solid hsl(0deg, 0%, 40%);
+}
+
+.intro-chunk {
+  max-width: 390px;
+}
+
+.intro-chunk p {
+  font-size: 1.25rem;
+}
+
+.intro-chunk strong {
+  color: hsl(160deg, 100%, 30%);
+}
+
+.card {
+  background-color: hsl(0deg, 0%, 100%);
+  border-bottom: 8px solid hsl(0deg, 0%, 40%);
+  padding: 8px 24px 24px;
+  margin-left: -24px;
+  margin-right: -24px;
+}
+
+.indented-heading {
+  font-size: 1.25rem;
+  max-width: fit-content;
+  padding: 24px 32px;
+  margin-left: -32px;
+  background-color: hsl(45deg, 100%, 50%);
+  border-bottom: 8px solid hsl(45deg, 100%, 40%);
+}
+
+.card p:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .max-width-wrapper {
+    max-width: 100%;
+  }
+
+  .card {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  header {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .indented-heading {
+    padding: 24px;
+    margin-left: -24px;
+  }
+}
+
+@media (max-width: 320px) {
+  .card {
+    border-bottom: none;
+  }
+
+  .card p {
+    display: none;
+  }
+
+  main {
+    padding-bottom: 0;
+  }
+}
